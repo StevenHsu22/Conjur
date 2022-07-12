@@ -1,0 +1,22 @@
+- !policy
+  id: mysql
+  body:
+    # Define a human user, a non-human identity that represents an application, and a secret
+  - !user steven
+  - !host myDemoApp
+  - &variables
+    - !variable ip
+    - !variable username
+    - !variable password
+
+  - !permit
+    # Give permissions to the human user to update the secret and fetch the secret.
+    role: !user steven
+    privileges: [read, update, execute]
+    resource: *variables
+
+  - !permit
+    # Give permissions to the non-human identity to fetch the secret.
+    role: !host myDemoApp
+    privileges: [read, execute]
+    resource: *variables
