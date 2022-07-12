@@ -196,10 +196,14 @@ echo "The retrieved value is: $VAR_VALUE_IP"; echo "The retrieved value is: $VAR
 21. 下載 python 的 conjur-client 套件，務必要下載 client 端的，否則會無法使用
 
 ```
-pip3 install conjur-client
+sudo apt-get install python3-pip python3-pymysql; pip3 install conjur-client
 ```
 
 22. 撰寫 Python 檔案，在 Conjur 中取得密碼，並連線 MySQL 執行 QUERY 取得 MySQL 版本
+
+```
+python3 conjur_test.py
+```
 
 ```python
 #!/usr/bin/env python3
