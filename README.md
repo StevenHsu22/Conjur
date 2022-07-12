@@ -42,7 +42,7 @@ git init ; git clone https://github.com/cyberark/conjur-quickstart.git
 cd conjur-quickstart/ ; vim docker-compose.yml
 ```
 
-5. 在適當位置貼上以下內容 [docker-compose.yml](https://github.com/StevenHsu22/Conjur)
+5. 在適當位置貼上以下內容 [docker-compose.yml](https://github.com/StevenHsu22/Conjur/blob/main/docker-compose.yml)
 
 ```yml
   mysql:
@@ -116,7 +116,7 @@ docker-compose exec client conjur authn login -u admin
 cd conf/policy/ && vi mysql.yml
 ```
 
-13. mysql.yml 內容 [mysql.yml](https://github.com/StevenHsu22/Conjur)
+13. mysql.yml 內容 [mysql.yml](https://github.com/StevenHsu22/Conjur/blob/main/mysql.yml)
 
 ```yml
 - !policy
@@ -199,7 +199,7 @@ echo "The retrieved value is: $VAR_VALUE_IP"; echo "The retrieved value is: $VAR
 sudo apt-get install python3-pip python3-pymysql; pip3 install conjur-client
 ```
 
-22. 撰寫 Python 檔案，在 Conjur 中取得密碼，並連線 MySQL 執行 QUERY 取得 MySQL 版本
+22. 撰寫 Python 檔案，在 Conjur 中取得密碼，並連線 MySQL 執行 QUERY 取得 MySQL 版本 [conjur_test.py](https://github.com/StevenHsu22/Conjur/blob/main/conjur_test.py)
 
 ```
 python3 conjur_test.py
