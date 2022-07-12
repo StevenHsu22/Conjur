@@ -1,5 +1,7 @@
 ## Conjur 實作練習
 
+[與 Darrenli 共同協作](https://github.com/Darrenli840214)
+
 *12 July 2022. Update: 2022/07/12.*
 
 * [使用環境](#env)
@@ -13,7 +15,7 @@
 <h2 id="target">目標</h2>
 
 * 安裝 Conjur/ MySQL  
-* 在 Conjur上將 MySQL 的 IP/ USERNAME / PASSWORD 設置上去，並限制由SERVER A取得  
+* 在 Conjur上將 MySQL 的 IP/ USERNAME / PASSWORD 設置上去，並限制由 SERVER A取得  
 * 在 SERVER A 上以 Python 實作一支 Script，透過 Conjur 的 REST API 取得MySQL 登入資訊後，登入MySQL 執行一個DB QUERY  
 
 <h2 id="procedure">操作步驟</h2>
